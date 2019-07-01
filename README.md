@@ -6,7 +6,7 @@ Starting point for Express/React/Sequelize projects
 
 1. NPM install
 
-//Back-end
+###Back-end
 
 2. Create database ('createdb 'NAME'')
 3. Update db name on Server/DB/db.js
@@ -15,11 +15,11 @@ Starting point for Express/React/Sequelize projects
 6. Connect API routes on Server/API/index.js
 7. Add routes in Server/API - ex. album.js
 
-//Front-end
+###Front-end
 
 8. Update CSS in Public/style.css
 9. Add any fonts/icons/etc in Client/index.html
 10. Update Client/Main.js - add Main class, methods, state, render components
 11. Add additional components - ex. Albums.js
 
-//Check out your fullstack web app!
+###Check out your fullstack web app!
