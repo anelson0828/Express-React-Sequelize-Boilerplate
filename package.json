@@ -1,0 +1,45 @@
+{
+  "name": "Express-React-Sequelize-Boilerplate",
+  "version": "1.0.0",
+  "description": "Starting point for Express/React/Sequelize projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon --watch server -e js,html server/main.js",
+    "build-watch": "webpack -w",
+    "seed": "node ./bin/seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anelson0828/Express-React-Sequelize-Boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2",
+    "font-awesome": "^4.7.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "sequelize": "^4.31.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.14.11",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/anelson0828/Express-React-Sequelize-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/anelson0828/Express-React-Sequelize-Boilerplate#readme"
+}
