@@ -1,7 +1,7 @@
 {
-  "name": "Express-React-Sequelize-Boilerplate",
+  "name": "Favorite-Spots-CRUD-App",
   "version": "1.0.0",
-  "description": "Starting point for Express/React/Sequelize projects",
+  "description": "Favorite-Spots-CRUD-App",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,18 +10,13 @@
     "build-watch": "webpack -w",
     "seed": "node ./bin/seed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/anelson0828/Express-React-Sequelize-Boilerplate.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1",
+    "axios": "^0.19.0",
     "express": "^4.16.2",
     "font-awesome": "^4.7.0",
-    "morgan": "^1.9.1",
     "pg": "^7.4.1",
     "pg-hstore": "^2.3.2",
     "react": "^16.2.0",
@@ -34,6 +29,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "morgan": "^1.9.1",
     "nodemon": "^1.14.11",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0"

@@ -2,10 +2,9 @@ const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
 const app = express();
-module.exports = app;
 
 // Logging middleware
-app.use(morgan);
+app.use(morgan('dev'));
 
 // Body parsing middleware
 app.use(express.json());
@@ -13,17 +12,18 @@ app.use(express.urlencoded({ extended: true }));
 
 // Static file-serving middleware
 app.use(express.static(path.join(__dirname, '..', 'public')));
-app.use(
-  express.static(
-    path.join(__dirname, '..', 'node_modules', 'font-awesome', 'css')
-  )
-);
-app.use(
-  '/fonts',
-  express.static(
-    path.join(__dirname, '..', 'node_modules', 'font-awesome', 'fonts')
-  )
-);
+
+// app.use(
+//   express.static(
+//     path.join(__dirname, '..', 'node_modules', 'font-awesome', 'css')
+//   )
+// );
+// app.use(
+//   '/fonts',
+//   express.static(
+//     path.join(__dirname, '..', 'node_modules', 'font-awesome', 'fonts')
+//   )
+// );
 
 // Routes that will be accessed via AJAX should be prepended with
 // /api so they are isolated from our GET /* wildcard.
@@ -49,3 +49,5 @@ app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(err.status || 500).send(err.message || 'Internal server error.');
 });
+
+module.exports = app;
