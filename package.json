@@ -32,7 +32,7 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.14.11",
     "webpack": "^4.16.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   },
   "bugs": {
     "url": "https://github.com/anelson0828/Express-React-Sequelize-Boilerplate/issues"
